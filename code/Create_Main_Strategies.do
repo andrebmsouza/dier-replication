@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////    Setup    //////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+clear
+dis "Creating main portfolio sorts..."
+use "../data/Monthly_Variables.dta"
+merge m:1 ym using "../data/inputs/FF_3F_Monthly.dta"
+keep if _merge==3
+drop _merge
+merge 1:1 PERMNO ym using "../data/ProbScore.dta"
+drop _merge
+xtset PERMNO ym, monthly
+
+keep MOM PRIMEXCH ym PERMNO RET lag_mcap ProbScore dateff
+////////////////////////////////////////////////////////////////////////////////
+///////////////////// Main Strategies  /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+astile qsj_mom  = MOM, qc(PRIMEXCH=="N") nq (10) by (ym)
+astile qsj_rets = RET, nq(10) by (ym)
+astile qsj_ps   = ProbScore, nq(10) by (ym)
+
+drop PRIMEXCH
+save "../portfolios/Strategies.dta", replace
+export delimited using "../portfolios/Strategies", replace
+
+dis "Strategies created."
