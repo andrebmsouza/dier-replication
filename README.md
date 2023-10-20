@@ -1,5 +1,5 @@
 # Replication Files for Directional Information in Equity Returns
-This repository contains replication files for the paper Directional Information in Equity Returns by [Luca Del Viva](https://sites.google.com/site/lucadelviva), [Carlo Sala](https://www.esade.edu/faculty/carlo.sala) and [Andre B.M. Souza](http://www.andrebmsouza.com). The paper will be available soon in SSRN.
+This repository contains replication files for the paper Directional Information in Equity Returns by [Luca Del Viva](https://sites.google.com/site/lucadelviva), [Carlo Sala](https://www.esade.edu/faculty/carlo.sala) and [Andre B.M. Souza](http://www.andrebmsouza.com). The paper is available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4575793).
 
 # Authors
 [Luca Del Viva](https://sites.google.com/site/lucadelviva), [Carlo Sala](https://www.esade.edu/faculty/carlo.sala), and [Andre B.M. Souza](http://www.andrebmsouza.com).
