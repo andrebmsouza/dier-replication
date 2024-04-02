@@ -19,8 +19,8 @@ Once the probability score is constructed, you can run the analysis to replicate
 
 ***Important Disclaimer:*** The data used in this study was downloaded from the following sources in April, 2023.
 
- - [CRSP_Daily](blank) from the WRDS (crsp_a_stock).
- - [CRSP_Monthly](blank) from the WRDS.
+ - [CRSP_Daily](https://wrds-www.wharton.upenn.edu/) from the WRDS (crsp_a_stock).
+ - [CRSP_Monthly](https://wrds-www.wharton.upenn.edu/) from the WRDS.
  - [Fama_French_Daily](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip) from [Kenneth French's website](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
  - [Fama_French_Monthly](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip) from [Kenneth French's website](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html).
  - `All_Factors.dta` is an authors' compiled file. This file contains:
